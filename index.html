@@ -1,1 +1,112 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mini App UI Kit — Cases &amp; Tab Bar</title>
+<link rel="stylesheet" href="gifts-mini-app-style.css" />
+</head>
+<body>
 
+<div class="stage">
+  <h1>Mini App UI Kit</h1>
+  <p class="lede">Своя реализация тёмной темы Telegram Mini App: токены → карточка → нижний таб-бар.</p>
+
+  <p class="section-label">Паки с гифтами</p>
+  <div class="case-grid">
+
+    <button class="case-card" data-rarity="standard">
+      <div class="case-card__art">
+        <img alt="" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='18' y='10' width='64' height='80' rx='14' fill='%23c23b3b'/><rect x='30' y='30' width='40' height='40' rx='8' fill='%23e8574f' opacity='.5'/></svg>" />
+      </div>
+      <p class="case-card__title">Стандартный</p>
+      <span class="price-pill">
+        <svg viewBox="0 0 20 20" fill="none"><path d="M10 1.5l2.47 5.6 6.03.55-4.56 4.06 1.37 5.9L10 14.68l-5.31 2.93 1.37-5.9L1.5 7.65l6.03-.55L10 1.5z" fill="#ffc53d"/></svg>
+        300
+      </span>
+    </button>
+
+    <button class="case-card" data-rarity="valuable">
+      <div class="case-card__art">
+        <img alt="" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='18' y='10' width='64' height='80' rx='14' fill='%23237a4d'/><rect x='30' y='30' width='40' height='40' rx='8' fill='%2333d17a' opacity='.5'/></svg>" />
+      </div>
+      <p class="case-card__title">Ценный</p>
+      <span class="price-pill">
+        <svg viewBox="0 0 20 20" fill="none"><path d="M10 1.5l2.47 5.6 6.03.55-4.56 4.06 1.37 5.9L10 14.68l-5.31 2.93 1.37-5.9L1.5 7.65l6.03-.55L10 1.5z" fill="#ffc53d"/></svg>
+        800
+      </span>
+    </button>
+
+    <button class="case-card" data-rarity="rare">
+      <div class="case-card__art">
+        <img alt="" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='18' y='10' width='64' height='80' rx='14' fill='%23b5591f'/><rect x='30' y='30' width='40' height='40' rx='8' fill='%23ff9a3d' opacity='.5'/></svg>" />
+      </div>
+      <p class="case-card__title">Редкий</p>
+      <span class="price-pill">
+        <svg viewBox="0 0 20 20" fill="none"><path d="M10 1.5l2.47 5.6 6.03.55-4.56 4.06 1.37 5.9L10 14.68l-5.31 2.93 1.37-5.9L1.5 7.65l6.03-.55L10 1.5z" fill="#ffc53d"/></svg>
+        1300
+      </span>
+    </button>
+
+    <button class="case-card" data-rarity="epic">
+      <div class="case-card__art">
+        <img alt="" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='18' y='10' width='64' height='80' rx='14' fill='%235a3a99'/><rect x='30' y='30' width='40' height='40' rx='8' fill='%23a06bff' opacity='.5'/></svg>" />
+      </div>
+      <p class="case-card__title">Эпический</p>
+      <span class="price-pill">
+        <svg viewBox="0 0 20 20" fill="none"><path d="M10 1.5l2.47 5.6 6.03.55-4.56 4.06 1.37 5.9L10 14.68l-5.31 2.93 1.37-5.9L1.5 7.65l6.03-.55L10 1.5z" fill="#ffc53d"/></svg>
+        1800
+      </span>
+    </button>
+
+    <button class="case-card" data-rarity="legendary">
+      <div class="case-card__art">
+        <img alt="" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='18' y='10' width='64' height='80' rx='14' fill='%23205ba3'/><rect x='30' y='30' width='40' height='40' rx='8' fill='%233da9ff' opacity='.5'/></svg>" />
+      </div>
+      <p class="case-card__title">Легендарный</p>
+      <span class="price-pill">
+        <svg viewBox="0 0 20 20" fill="none"><path d="M10 1.5l2.47 5.6 6.03.55-4.56 4.06 1.37 5.9L10 14.68l-5.31 2.93 1.37-5.9L1.5 7.65l6.03-.55L10 1.5z" fill="#ffc53d"/></svg>
+        3000
+      </span>
+    </button>
+
+  </div>
+
+  <p class="section-label">Нижнее меню (мобильный Mini App)</p>
+  <div class="phone-frame">
+    <div class="phone-screen">
+      экран приложения
+      <nav class="tab-bar" aria-label="Основная навигация">
+
+        <button class="tab-item is-active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z"/><path d="M4 7.5L12 12l8-4.5M12 12v9"/></svg>
+          Кейсы
+        </button>
+
+        <button class="tab-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 15l6-6 6 6"/><path d="M6 9l6-6 6 6"/></svg>
+          Апгрейд
+        </button>
+
+        <button class="tab-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg>
+          Крафты
+        </button>
+
+        <button class="tab-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M12 8V6a2 2 0 114 0M12 6a2 2 0 10-4 0"/><path d="M4 13h16"/></svg>
+          Конкурсы
+        </button>
+
+        <button class="tab-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="3.4"/><path d="M5 20c0-3.6 3.1-6.4 7-6.4s7 2.8 7 6.4"/></svg>
+          Профиль
+        </button>
+
+      </nav>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
